@@ -1,0 +1,43 @@
+{
+ "python": "3.12.3",
+ "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+ "gcc": [
+  "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+ ],
+ "objdump": [
+  "GNU objdump (GNU Binutils for Ubuntu) 2.42"
+ ],
+ "sha256": {
+  "README.md": "06a13c753f4ec481cf89790965bdebb1070b808802153c90ec31aadd12ed15a4",
+  "dynphi/__init__.py": "435f4561e8bdf297bc862ae079ea76b36ab2f2403bc38d78d44bcd2f89c3242c",
+  "dynphi/baselines.py": "f741737ce2c0a0183cab76cc86957fe8e561f4ca465fe2f5ceed4265058ce94b",
+  "dynphi/cfg.py": "1705eea3074294872bd16d71dc1625f6c75ca9c4cb1a355146cc21f0d61de056",
+  "dynphi/core.py": "7376a7eed77c3850b853391febc2a38cf63d0f14fb939d2b664397159e18b9e2",
+  "dynphi/gen.py": "118f4171be5c771317f5b2fb082ceb55b140fdbeaffdb25a3e065b62538c3866",
+  "dynphi/ir.py": "ba8d7c3aad474a3d04a9d08259fbb20c1515057a7a281edd8ed6ac5edcc18af0",
+  "dynphi/oracle.py": "e483704e0bde0d22aa0f4d36b9351f949290b5182f8a1e63aa3394d4fa735563",
+  "dynphi/static_corr.py": "64e9478526f1d58e51d7d457f4f5f1e56e9f21647994091ab24f6f75697eb678",
+  "dynphi/x86/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "dynphi/x86/build_corpus.py": "fcc556dc73835e85f20fb67257653ad69539b460a3e62d7f5a0175688bd05b05",
+  "dynphi/x86/cgen.py": "76395b3dcfd1b8bb5c66a7bc3a42d37e91277e745b00a6a12691040b5d4e7fbc",
+  "dynphi/x86/corpus.py": "34f6fd35d2584d42061584fe505f800a592284a4b737d69a0c1ea3f1480d98d1",
+  "dynphi/x86/data/c3.c": "e4cc81874770f4fe70d386ffc0f861742245efbdc4ce194ecf5dd41a3c5658a8",
+  "dynphi/x86/data/c3.objdump.txt": "684f39a5d75976a90460e08d2c62f860311a223c907995de48cb90f1e38e22c1",
+  "dynphi/x86/data/c4.c": "2e00d82633eb756c223956f95b087858f06d3716ca63631804b1603c5dc0529f",
+  "dynphi/x86/data/c4.objdump.txt": "9b9595cd79f0f4e335ea64025a43fb1c9905532807fe9fff677b5c0ef5d09fe9",
+  "dynphi/x86/lift.py": "a31fe08f5b7a0cc63d23b370c813b6d66ddb7436ac0bdaeb9a4185cfc238f48b",
+  "experiments/make_figures.py": "ed0fc33b865c59b42df313a949cfa123c658f63d4733b1e0b2a582e9cd248387",
+  "experiments/record_provenance.py": "ca934d85e3230cb7c020a715f348d0054d8d256b8d6aa27d403c85ff41dd6cce",
+  "experiments/run_eval.py": "6ea234c8769033762c3ceabc10e3adc9130879c0892c291fde6956a21cd92f44",
+  "prereg/PREREG_C3.md": "cdf0618cdf44eb4f85f9ccfa2d500438652b9667c524ae0e7eafa4d61356ae89",
+  "prereg/PREREG_C3_as_registered.md": "9e26adab6417bf390fa272dc99d3cb485ae71d29c16c14a9cab58c6acb0cec16",
+  "prereg/PREREG_C4.md": "332913cfba397715eee18b976836aeed42faf1548e4e48ff0c7ac548e001d0b1",
+  "results/results.json": "cf1f408c7f71a298be5fde77d039cc1d66a7570afc1b77a37d3951c69343a72f",
+  "results/results_x86.json": "4c1bec03e47ef36143babaa73c19b05b158791278c65e326f4e6442a7873122d",
+  "results/results_x86v2.json": "c638c120dbaf3f611847ae8791cd8f202f6f97e3f0ecded97185ecf6ccb633a1",
+  "run_all.sh": "8f9028eeb048f6b7ecff42d7f7ba48d960ba79b5e588d6f81dcbf10b4bcf50cd",
+  "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tests/test_dynphi.py": "a1c12065796a4494de5c373cd75862267c07fc1d6e02af25558f77e506446cb8",
+  "tests/test_x86.py": "9c4b196d8d4736b0480b2c9ea24eecd05c998f377a76294db74f76e6caae6632"
+ }
+}

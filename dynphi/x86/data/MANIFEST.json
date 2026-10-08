@@ -1,0 +1,31 @@
+{
+ "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+ "objdump": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+ "gcc_flags": [
+  "-O0",
+  "-fno-asynchronous-unwind-tables",
+  "-fcf-protection=none",
+  "-fno-pie",
+  "-fno-stack-protector"
+ ],
+ "specs": {
+  "c3": {
+   "seed": 9000,
+   "n": 200,
+   "clean_frac": 0.0,
+   "wide": false
+  },
+  "c4": {
+   "seed": 12000,
+   "n": 200,
+   "clean_frac": 0.5,
+   "wide": true
+  }
+ },
+ "sha256": {
+  "c3.c": "e4cc81874770f4fe70d386ffc0f861742245efbdc4ce194ecf5dd41a3c5658a8",
+  "c3.objdump.txt": "684f39a5d75976a90460e08d2c62f860311a223c907995de48cb90f1e38e22c1",
+  "c4.c": "2e00d82633eb756c223956f95b087858f06d3716ca63631804b1603c5dc0529f",
+  "c4.objdump.txt": "9b9595cd79f0f4e335ea64025a43fb1c9905532807fe9fff677b5c0ef5d09fe9"
+ }
+}

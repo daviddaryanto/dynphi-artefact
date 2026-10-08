@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynphi"
+version = "1.0.0"
+description = "Reference implementation of Dyn-Phi: execution-evidence annotated reaching definitions for triaging opaque predicates"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "David Daryanto", email = "hub@ecls.ltd" }]
+keywords = ["binary analysis", "opaque predicates", "deobfuscation", "reaching definitions"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Science/Research",
+  "Topic :: Security",
+]
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.5"]
+
+[project.urls]
+Repository = "https://github.com/daviddaryanto/dynphi-artefact"
+DOI = "https://doi.org/10.5281/zenodo.23249925"
+
+[tool.setuptools.packages.find]
+include = ["dynphi*"]
+
+[tool.setuptools.package-data]
+"dynphi.x86" = ["data/*"]

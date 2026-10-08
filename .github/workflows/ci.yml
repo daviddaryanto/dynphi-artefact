@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Tests (native-execution tests run here: x86-64 with gcc)
+        run: python -m unittest -v tests.test_dynphi tests.test_x86
+      - name: Tests with native tests skipped (what an ARM host runs)
+        run: DYNPHI_SKIP_NATIVE=1 python -m unittest tests.test_dynphi tests.test_x86
+      - name: Smoke run of the C4 evaluation on 10 functions
+        run: DYNPHI_OUT=smoke.json python -m experiments.run_eval 10 x86v2
+      - name: Quickstart example
+        run: python examples/quickstart.py
